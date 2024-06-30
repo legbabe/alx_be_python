@@ -1,4 +1,10 @@
-pattern = input("Enter the size of the pattern: ")
+pattern = int(input("Enter the size of the pattern: "))
 
-while pattern:
-    print("*", end="") 
+sides = 0
+
+while sides < pattern:
+    for num in range(pattern):
+        print("*", end="")
+    print() #for a new line
+
+    sides += 1
